@@ -1,0 +1,147 @@
+#body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+#keypad{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px;
+    position: absolute;
+    width: 480px;
+    height: 360px;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+
+}
+
+#pad{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px;
+    position: absolute;
+    width: 360px;
+    height: 480px;
+    top: 20%;
+    left: 60%;
+    border-width: 10px;
+    border-color: blue;
+    background-color: red;
+    
+
+}
+
+#No1{
+    
+    color: white;
+    border-width: 10px;
+    border-color: aqua;
+}
+
+#No6{
+   
+    color: white;
+    border-width: 10px;
+    border-color: white;
+}
+
+#no0{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+   
+}
+
+#no1{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+   
+
+
+#no2{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no3{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no4{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no5{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no6{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no7{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no8{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no9{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+#no10{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}#no11{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-color: white;
+}
+   
+#textbox{
+    width: 300px;
+    height: 45px;
+    background-color: black;
+    margin-left: 43.5%;
+    margin-top: 15px;
+    position: fixed;
+    border: 5px;
+    border-width: 5px;
+    border-color: aliceblue;
+    
+}
+#instr{
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline 8px red;
+    
+    color: aliceblue;
+    
+   
+      
+}

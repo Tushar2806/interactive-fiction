@@ -1,0 +1,70 @@
+#body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0)
+}
+#typing-text{
+    font-size: 40px;
+    font-style:oblique;
+    color: red;
+    overflow: hidden;
+    height: 50px;
+    
+   margin-left: 51%;
+   margin-top: 25%;
+   transform: translate(-50%,-50%);
+   width: 500px;
+   
+}
+#typing-text::after {
+    content: "  Welcome to The Time Machine Heist."; /* Use a pipe character as the cursor */
+    display: inline-block;
+    animation: typing 1s steps(20, end) ;
+    
+    color: #0bb605;
+    opacity: 100%;
+
+  }
+@keyframes typing {
+    from { width: 0;opacity: 0%; }
+    to { width: 100%; opacity: 100%;}
+  }
+
+  #typing-text1{
+    font-size: 20px;
+    background-color: black;
+    
+    font-style:normal;
+    color: white;
+    overflow: hidden;
+    height: 50px;
+    
+   margin-left: 45%;
+   margin-top:-20px;
+   animation:fade 2s steps(1,end) ;
+   border-color: #0bb605;
+   display: inline;
+  
+}
+
+@keyframes fade {
+    from{opacity: 0%;}
+    to{opacity: 100%;
+    }
+    
+}
+
+@keyframes slide {
+    0%   {background-color:red; }
+  25%  {background-color:yellow;}
+  50%  {background-color:blue; }
+  75%  {background-color:green;}
+  100% {background-color:red; }
+    
+}
+#typing-text1:hover{
+    animation: slide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}

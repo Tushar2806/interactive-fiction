@@ -1,0 +1,24 @@
+
+#body{
+    background-color: black;
+}
+#button{
+    width:120px;
+    position: absolute;
+    top: 50%;
+}
+p{
+    font-size: x-large;
+    color: aliceblue;
+    position: absolute;
+    text-align: center;
+    right: 35%;
+    top: 30%;
+    
+
+}
+#input{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}

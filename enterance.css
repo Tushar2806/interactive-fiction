@@ -1,0 +1,55 @@
+#body{
+ width: 100%;
+ height: 100%;
+ border: dotted ;
+ border-color: crimson;
+ border-width: 2px;
+ background-size: cover;
+ background-color: black;
+}
+#box{
+    background: none;
+    width: 350px;
+    height: 60px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+#code{ 
+    background:none;
+    border-width: 5px;
+    border-color: crimson;
+    color: #fff;
+    width: 164px;
+height: 40px;
+
+position: relative;
+top: 6px;
+}
+#break
+{ 
+    background:none;
+    border-width: 5px;
+    border-color: crimson;
+    color: #fff;
+    width: 164px;
+    height: 40px;
+    position: relative;
+top: 6px;
+right: 0px;
+}
+#para{
+  
+    width:max-content;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    font-size: 40px;
+    display: inline;
+
+}
