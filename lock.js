@@ -116,7 +116,7 @@ function no10()
 if ( count==8)
 {
    document.getElementById("body").style.backgroundColor="green";
-   window.location.href="start.html";
+   window.location.href="hall.html"
 }
 else{
     document.getElementById("body").style.backgroundColor="red";

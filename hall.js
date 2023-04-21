@@ -4,7 +4,7 @@ function input() {
    
    if(x =='A')
    {
-    window.location.href="start.html"
+    window.location.href="index.html"
    }
    if(x=="B")
    {

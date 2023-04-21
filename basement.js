@@ -10,7 +10,7 @@ function slideright()
 
 }
 function nextpage(){
-    window.location.href="start.html";
+    window.location.href="index.html";
 
 }
 
