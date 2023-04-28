@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="lock.css">
     <meta charset="utf-8" />
@@ -9,6 +12,33 @@
 
   </head>
   <body id="body">
+    
+    <div id="typing-text">
+      
+    </div>
+   
+    <div id="textbox">
+      <p id="instr"> Take a moment to think about what the code might be before you start entering numbers.
+        <br>
+        <br>
+        Enter the 8 digit code to enter the house
+        <br>
+        <br>
+        The buttons on the keypad are labelled "enter," "retry," and the numbers 0 through 9. To enter your code, press the buttons. Before clicking enter, you can always hit the "retry" button to start over.
+        <br>
+        <br>
+        The lock screen will disappear if you enter the right code, allowing you to access the secured area. <br> <br>If you enter an incorrect code, the lock screen will display a message telling you that the code is incorrect and you will fall into the basement
+        <br>
+        <br>
+        
+        YOU ONLY HAVE ONE CHANCE TO GET THE CODE RIGHT TO OPEN THE LOCK.
+        <br>
+        <br>
+        GOOD LUCK!!
+
+      </p>
+    </div>
+    
     <div id="keypad">
         <button onclick="no1()" id="no1">1</button>
         <button onclick="no2()" id="no2">2</button>
@@ -22,25 +52,10 @@
         <button onclick="no0()" id="no0">0</button>
         <button onclick="no10()" id="no10">enter</button>
         <button onclick="no11()" id="no11">retry</button>
-        
-    </div>
-    <div id="pad">
-      <div id="No1"><p>1</p></div>
-      <div id="No2"><p>2</p></div>
-      <div id="No3"><p>3</p></div>
-      <div id="No4"><p>4</p></div>
-      <div id="No5"><p>5</p></div>
-      <div id="No6"><p>6</div>
-      <div id="No7"><p>7</p></div>
-      <div id="No8"><p>6</div>
-        <div id="No9"><p>7</p></div>
-        <div id="No0"><p>0</p></div>
-
-
-    </div>
-    <div id="textbox">
-      <p id="instr">Enter the 8 digit code to enter the house</p>
-    </div>
+        </div>
+         
+  
+   
 
 
     

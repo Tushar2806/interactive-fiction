@@ -1,5 +1,33 @@
-center-container { 
-    position: absolute; 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+html{
+    margin: 0%;
+    padding: 0;
+  }
+  
+  
+  body{
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+    
+  
+  }
+#bg{
+    background-color: black;
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+
+
+#center-container { 
+    background: none;
+    
+   
     
    
    
@@ -10,18 +38,16 @@ center-container {
     background:black;
 position: relative;
 width: 400px;
-transform: translate(-50%, -50%);
-top: 350px;
- left: 50%;
+height: fit-content;
+
+
 
 display: inline-block;
 
 padding: 0 40px; 
 cursor: pointer;
 overflow:hidden;
-border: solid;
-border-width: 0.01px;
-border-color: #ffffff; 
+ 
 
 
 
@@ -34,14 +60,15 @@ text-transform: uppercase;
 font-weight: 1; position: relative;
 color:black;
 
+
 }
 
 .text::before {
 
-content: "You failed to put the right password, you fall into the basement.there is no light and need to find the key to leave the room.";
-
+content: "You failed to put the right password, you fall into the basement.there is no light and need to find the key to leave the room.Hover around the page to find the key";
+height: fit-content;
 position: absolute;
-color: white;
+color: #0bb605;;
 width: 0; 
 overflow: hidden;
 
@@ -56,10 +83,10 @@ content:"";
 width: 0%; height: 100%;
 
 position: absolute; 
-background-image: url(d2.jpg);
+
 background-size: cover;
 
-right: 0; top: 0;
+
 
 transition: 0.6s;
 
@@ -71,31 +98,66 @@ transition: 0.6s;
 {
      width: 100%;
 }
-#body{
-    width: 100%;
-    height: 100%;
-    background-color: black;
+#typing-text
+{ 
+   
+  font-family: 'VT323', monospace;
+ 
+    font-size: 60px;
+    font-style:oblique;
+    color: red;
+    overflow: hidden;
+    height: 80px;
+    text-align: center;
+    width:100%;
+    
+   
+   
+
+    
+  
+   
+ }
+ #typing-text::after {
+    content: "BASEMENT"; 
+    
+    animation: typing 1s steps(30, end) ;
+    display: inline-block;
+    color: #0bee03;
+    opacity: 100%;
+    background-color: none;
+    border: solid 5px  #0bee03;
+    border-bottom: solid 5px  #0bee03;
+    align-self:baseline;
+    
+    width:100%;
+    
+   
+
+  }
+@keyframes typing {
+    from { width: 0;opacity: 0%; }
+    to { width: 100%; opacity: 100%;} 
 }
-
 #caption{
-    color: white;
-    position: absolute;
-    font-size: 30px;
-    bottom: 16px;
-    left: 40%;
-    transform: translate(-50,-50);
-
+    color:#0bb605;
+    justify-self: center;
+    
+    
+   
 }
 #quit{
     position: absolute;
-    color: crimson;
+    right: 0%;
+    color: #0bb605;
     width: 120px;
     border-width: 2px;
     border-radius: 4px;
-    border-color: crimson;
-    background:none;
-    top: 2%;
-    right: 2%;
+    border-color: #0bb605;
+    background: none;
+    justify-self: right;
+    align-self: baseline;
+    
 
 }
 
@@ -104,12 +166,20 @@ transition: 0.6s;
     width: 120px;
     height: 60px;
     background-color:black;
+   
+    
     position: absolute;
-    left: 20px;
     border:solid;
     border-width: 0.3px;
     
+   align-self: baseline;
+   justify-self: left;
+   
+
+    
+    
 }
+
 
 
 
@@ -119,21 +189,30 @@ transition: 0.6s;
 #key{
     width: 60px;
     height: 40px;
-    position: absolute;
-    left: 50px;
-    top:140px;
+    align-self: baseline;
     background: none;
-    
-    color: black;
+    position: absolute;
+    color: none;
     border: none;
+    
     
 
 }
 #key:hover{
     border: solid;
-    border-color: #ffffff;
+    border-color: #0bb605;;
     border-width: 0.3px;
     
 }
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media screen and (max-width:1000px)and(min-width:400px) {
+    #center-container{
+        align-self: baseline;
+    }
+    
+  }
 
 

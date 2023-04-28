@@ -1,15 +1,23 @@
+
 function input() {
-    let x = document.getElementById("input").value;
-   console.log(x);
+  let x = document.getElementById("input").value;
+console.log(x);
    
-   if(x =='A')
+   
+   if(x =="A")
    {
-    window.location.href="index.html"
+    window.location.href="index.html";
    }
-   if(x=="B")
+   else 
    {
-    window.location.href="die.html"
+    window.location.href="basement.html";
 
    }
+  
+   
+
+  }
+  function hover(){
+    document.getElementById("button").style.backgroundColor="black";
   }
   

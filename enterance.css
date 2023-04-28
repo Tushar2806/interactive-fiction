@@ -1,55 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 #body{
- width: 100%;
- height: 100%;
- border: dotted ;
+ width: 100dvw;
+ height: 100dvh;
+ display: flex;
+ 
  border-color: crimson;
  border-width: 2px;
  background-size: cover;
  background-color: black;
+ font-family: 'VT323', monospace;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+gap: 0px;
+
 }
 #box{
     background: none;
-    width: 350px;
-    height: 60px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: fit-content;
+    height: 64px ;
+    align-self: center;
+
+  
+   
+/*   
+    transform: translate(-50%,-50%); */
+    
+    
     
     
 }
 #code{ 
     background:none;
     border-width: 5px;
-    border-color: crimson;
-    color: #fff;
+    border-color: #0bee03;
+    color: #0bee03;
     width: 164px;
-height: 40px;
+    height: 40px;
+  
 
-position: relative;
-top: 6px;
+
+
 }
 #break
 { 
     background:none;
     border-width: 5px;
-    border-color: crimson;
-    color: #fff;
+    border-color: #0bee03;
+    color: #0bee03;
     width: 164px;
     height: 40px;
-    position: relative;
-top: 6px;
-right: 0px;
+  
+
+
+}
+#typing-text
+{  
+    position: absolute;
+    top: 0%;
+    align-self: baseline;
+   
+  font-family: 'VT323', monospace;
+ 
+    font-size: 60px;
+    font-style:oblique;
+    color: red;
+    overflow: hidden;
+    height: 80px;
+    text-align: center;
+    width:100%;
+    
+   
+   
+
+    
+  
+   
+ }
+ #typing-text::after {
+    content: " Enterance"; 
+    
+    animation: typing 1s steps(20, end) ;
+    display: inline-block;
+    color: #0bee03;
+    opacity: 100%;
+    background-color: none;
+    border: solid 5px  #0bee03;
+    border-bottom: solid 5px  #0bee03;;
+    
+    width:100%;
+    
+   
+
+  }
+  @keyframes typing {
+    from { width: 0;opacity: 0%; }
+    to { width: 100%; opacity: 100%;} 
 }
 #para{
   
-    width:max-content;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: red;
+    width:60%;
+    padding :10px;
+    
+    align-items: center;
+    text-align: justify;
+    color:#0bee03;
     font-size: 40px;
-    display: inline;
+    border:solid #0bee03 5px;
 
 }
+::-webkit-scrollbar {
+    display: none;
+  }
+  
